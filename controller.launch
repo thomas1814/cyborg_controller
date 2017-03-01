@@ -1,0 +1,10 @@
+<launch>
+	<node name="cyborg_controller" pkg="cyborg_controller" type="controller.py" output="screen"/>
+
+	<node name="cyborg_idle" pkg="cyborg_idle" type="cyborg_idle" output="screen" />
+	<node name="cyborg_navigation" pkg="cyborg_navigation" type="navigation.py" output="screen" />
+	<node name="cyborg_conversation" pkg="cyborg_conversation" type="conversation.py" output="screen" />
+	<node name="cyborg_music" pkg="cyborg_music" type="music.py" output="screen" />
+	
+	<node name="cyborg_text_to_speech" pkg="cyborg_text_to_speech" type="text_to_speech.py" output="screen" />
+</launch>
